@@ -12,22 +12,31 @@
     <div class="menu_container">
       <div class="logo"></div>
       <div class="icons">
-        <img src="./src/img/icon-document.svg" alt="icon-document" class="icon_item">
-        <img src="./src/img/icon-folder.svg" alt="icon-folder" class="icon_item">
-        <img src="./src/img/icon-upload.svg" alt="icon-upload" class="icon_item">
+        <div class="icon_item">
+          <img src="./src/img/icon-document.svg" alt="icon-document">
+        </div>
+        <div class="icon_item">
+          <img src="./src/img/icon-folder.svg" alt="icon-folder">
+        </div>
+        <div class="icon_item">
+          <img src="./src/img/icon-upload.svg" alt="icon-upload">
+        </div>
       </div>
     </div>
     <div class="storage_container">
-      <p>You’ve used <span>815 GB</span> of your storage</p>
+      <p class="storage_used">You’ve used <span>815 GB</span> of your storage</p>
       <div class="progress">
         <div class="progress_active">
           <div class="circle"></div>
         </div>
-        <p class="storage_initial">0 GB</p>
-        <p class="storage_full">1000 GB</p>
+      </div>
+      <div class="value_container">
+        <p>0 GB</p>
+        <p>1000 GB</p>
       </div>
       <div class="storage_left">
-        <p class="storage_left">185 <span>GB Left</span></p>
+        <p>185</p>
+        <span>GB Left</span>
       </div>
     </div>
   </main>
