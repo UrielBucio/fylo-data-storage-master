@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 :root {
-    /* --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%) */
     --paleBlue: hsl(243, 100%, 93%);
     --grayishBlue: hsl(229, 7%, 55%);
     --darkBlue: hsl(228, 56%, 26%);
@@ -12,8 +11,125 @@
     padding: 0;
 }
 body {
+    align-items: center;
+    background-color: var(--darkBlue);
+    background-image: url(../src/img/bg-mobile.png);
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    justify-content: center;
+}
+.main_container {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 8.125rem auto;
+    width: 89.35%;
+}
+.menu_container, .storage_container {
+    background-color: var(--darkBlue);
+    width: 100%;
+}
+.menu_container {
+    border-radius: 0.625rem 6.25rem 0.625rem 0.625rem;
+    padding: 2.5rem;
+}
+.logo {
+    background-image: url(../src/img/logo.svg);
+    background-repeat: no-repeat;
+    height: 2.5rem;
+    margin-bottom: 2.188rem;
+    width: 100%;
+}
+.icon_item {
+    background-color: var(--veryDarkBlue);
+    border-radius: 15px;
+    display: inline-flex;
+    height: 3.125rem;
+    padding: 0.938rem;
+    justify-content: center;
+    margin-right: 0.938rem;
+    width: 3.125rem;
+}
+.storage_container {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 10rem;
+    padding: 1.875rem;
+    position: relative;
+    text-align: center;
+}
+.storage_used span{
+    font-weight: 700;
+}
+.progress {
+    align-items: center;
+    background-color: var(--veryDarkBlue);
+    border-radius: 35px;
+    display: flex;
+    height: 1.25rem;
+    margin: 0.9rem 0 0.5rem;
+    width: 95%;
+}
+.progress_active {
+    background-image: linear-gradient(135deg,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 35px;
+    height: 70%;
+    margin-left: 3px;
+    position: relative;
+    width: 75%;
+}
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    height: 10px;
+    position: absolute;
+    top: 10%;
+    right: 1.5%;
+    width: 10px;
+}
+.value_container {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    width: 95%;
+}
+.storage_left {
+    align-items: center;
+    background-color: white;
+    color: var(--veryDarkBlue);
+    border-radius: 15px;
+    display: flex;
+    height: 4.375rem;
+    justify-content: space-between;
+    padding: 1.563rem;
+    position: absolute;
+    top: 75%;
+    width: 11.25rem;
+}
+.storage_left p {
+    color: var(--veryDarkBlue);
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.storage_left span {
+    color: var(--grayishBlue);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: var(--paleBlue); }
